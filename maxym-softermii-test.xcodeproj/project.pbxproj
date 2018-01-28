@@ -18,6 +18,10 @@
 		9CDE485D201DED9C00F4629C /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE485C201DED9C00F4629C /* KeychainService.swift */; };
 		9CDE485F201DF17100F4629C /* InstagramAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE485E201DF17100F4629C /* InstagramAPI.swift */; };
 		9CDE4862201DF20800F4629C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4861201DF20800F4629C /* Constants.swift */; };
+		9CDE4869201DFE0900F4629C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4867201DFE0900F4629C /* LoginViewController.swift */; };
+		9CDE486A201DFE0900F4629C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE4868201DFE0900F4629C /* LoginViewController.xib */; };
+		9CDE486D201DFE8800F4629C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */; };
+		9CDE486F201E009400F4629C /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486E201E009400F4629C /* LoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		9CDE485C201DED9C00F4629C /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		9CDE485E201DF17100F4629C /* InstagramAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramAPI.swift; sourceTree = "<group>"; };
 		9CDE4861201DF20800F4629C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CDE4867201DFE0900F4629C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9CDE4868201DFE0900F4629C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9CDE486E201E009400F4629C /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
 		A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +80,8 @@
 		9CAB7B4B201DC0420043DEF4 /* maxym-softermii-test */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE486B201DFE6800F4629C /* Extensions */,
+				9CDE4863201DFD5A00F4629C /* Screens */,
 				9CDE4860201DF1F400F4629C /* Helpers */,
 				9CDE4859201DEC3000F4629C /* API */,
 				9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */,
@@ -100,6 +110,40 @@
 				9CDE4861201DF20800F4629C /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9CDE4863201DFD5A00F4629C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE4871201E10C500F4629C /* Home */,
+				9CDE4864201DFD7600F4629C /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9CDE4864201DFD7600F4629C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE4867201DFE0900F4629C /* LoginViewController.swift */,
+				9CDE4868201DFE0900F4629C /* LoginViewController.xib */,
+				9CDE486E201E009400F4629C /* LoginWebView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9CDE486B201DFE6800F4629C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CDE4871201E10C500F4629C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		ACE27D684E579C9CBC0DE4CC /* Frameworks */ = {
@@ -181,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDE486A201DFE0900F4629C /* LoginViewController.xib in Resources */,
 				9CAB7B57201DC0420043DEF4 /* LaunchScreen.storyboard in Resources */,
 				9CAB7B54201DC0420043DEF4 /* Assets.xcassets in Resources */,
 				9CDE4856201DC11B00F4629C /* Podfile in Resources */,
@@ -285,6 +330,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDE486D201DFE8800F4629C /* UIViewController+Extension.swift in Sources */,
+				9CDE486F201E009400F4629C /* LoginWebView.swift in Sources */,
+				9CDE4869201DFE0900F4629C /* LoginViewController.swift in Sources */,
 				9CAB7B4F201DC0420043DEF4 /* ViewController.swift in Sources */,
 				9CDE485D201DED9C00F4629C /* KeychainService.swift in Sources */,
 				9CAB7B4D201DC0420043DEF4 /* AppDelegate.swift in Sources */,
