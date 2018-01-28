@@ -11,6 +11,7 @@ import WebKit
 import RxSwift
 import Moya
 import RxCocoa
+import Moya_ObjectMapper
 
 class LoginViewController: UIViewController {
 
@@ -31,25 +32,7 @@ class LoginViewController: UIViewController {
     
     func handleAuth(authToken: String)  {
         KeychainService.token = authToken
-        
-        provider.rx
-            .request(InstagramAPI.getUser()).mapJSON().subscribe(onSuccess: { (response) in
-                print(response)
-            }) { (error) in
-                print(error)
-            }
-            .disposed(by: disposeBag)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

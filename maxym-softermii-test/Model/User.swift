@@ -45,29 +45,16 @@ class User: Object, Mappable {
     // MARK: - Mapping
     
     func mapping(map: Map) {
-        
-//        {
-//            "data": {
-//                "id": "1574083",
-//                "username": "snoopdogg",
-//                "full_name": "Snoop Dogg",
-//                "profile_picture": "http://distillery.s3.amazonaws.com/profiles/profile_1574083_75sq_1295469061.jpg",
-//                "bio": "This is my bio",
-//                "website": "http://snoopdogg.com",
-//                "is_business": false,
-//                "counts": {
-//                    "media": 1320,
-//                    "follows": 420,
-//                    "followed_by": 3410
-//                }
-//            }
-//        }
-        
-        var data = [String: Any]()
-        data <- map["data"]
-        ID <- map["data"]["id"]
-
-        
+        ID <- map["data.id"]
+        username <- map["data.username"]
+        fullName <- map["data.full_name"]
+        profilePicture <- map["data.profile_picture"]
+        bio <- map["data.bio"]
+        website <- map["data.website"]
+        isBusiness <- map["data.is_business"]
+        mediaCount <- map["data.counts.media"]
+        followsCount <- map["data.counts.follows"]
+        followedByCount <- map["data.counts.followed_by"]
     }
 
 }
