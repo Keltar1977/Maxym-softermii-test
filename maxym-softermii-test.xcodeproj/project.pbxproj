@@ -22,6 +22,7 @@
 		9CDE486A201DFE0900F4629C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE4868201DFE0900F4629C /* LoginViewController.xib */; };
 		9CDE486D201DFE8800F4629C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */; };
 		9CDE486F201E009400F4629C /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486E201E009400F4629C /* LoginWebView.swift */; };
+		9CDE487B201E1C6F00F4629C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE487A201E1C6E00F4629C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9CDE4868201DFE0900F4629C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		9CDE486E201E009400F4629C /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
+		9CDE487A201E1C6E00F4629C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 		9CAB7B4B201DC0420043DEF4 /* maxym-softermii-test */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE4879201E1C6E00F4629C /* Model */,
 				9CDE486B201DFE6800F4629C /* Extensions */,
 				9CDE4863201DFD5A00F4629C /* Screens */,
 				9CDE4860201DF1F400F4629C /* Helpers */,
@@ -144,6 +147,14 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		9CDE4879201E1C6E00F4629C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE487A201E1C6E00F4629C /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ACE27D684E579C9CBC0DE4CC /* Frameworks */ = {
@@ -338,6 +349,7 @@
 				9CAB7B4D201DC0420043DEF4 /* AppDelegate.swift in Sources */,
 				9CDE485B201DEC4A00F4629C /* APIProvider.swift in Sources */,
 				9CDE485F201DF17100F4629C /* InstagramAPI.swift in Sources */,
+				9CDE487B201E1C6F00F4629C /* User.swift in Sources */,
 				9CDE4862201DF20800F4629C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
