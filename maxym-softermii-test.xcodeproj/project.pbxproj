@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188B8EF8BB54D88B0A54D887 /* Pods_maxym_softermii_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46327D663655B81DC8DE14F2 /* Pods_maxym_softermii_test.framework */; };
 		9CAB7B4D201DC0420043DEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */; };
 		9CAB7B4F201DC0420043DEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB7B4E201DC0420043DEF4 /* ViewController.swift */; };
 		9CAB7B52201DC0420043DEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B50201DC0420043DEF4 /* Main.storyboard */; };
 		9CAB7B54201DC0420043DEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B53201DC0420043DEF4 /* Assets.xcassets */; };
 		9CAB7B57201DC0420043DEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B55201DC0420043DEF4 /* LaunchScreen.storyboard */; };
+		9CDE4856201DC11B00F4629C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE4855201DC11A00F4629C /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46327D663655B81DC8DE14F2 /* Pods_maxym_softermii_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maxym_softermii_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982D3FCDAF7A542DF113126D /* Pods-maxym-softermii-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.release.xcconfig"; sourceTree = "<group>"; };
 		9CAB7B49201DC0420043DEF4 /* maxym-softermii-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maxym-softermii-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CAB7B4E201DC0420043DEF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9CAB7B53201DC0420043DEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CAB7B56201DC0420043DEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CAB7B58201DC0420043DEF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDE4855201DC11A00F4629C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188B8EF8BB54D88B0A54D887 /* Pods_maxym_softermii_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,9 @@
 			children = (
 				9CAB7B4B201DC0420043DEF4 /* maxym-softermii-test */,
 				9CAB7B4A201DC0420043DEF4 /* Products */,
+				9CDE4855201DC11A00F4629C /* Podfile */,
+				FF978FEFC46182432705A091 /* Pods */,
+				ACE27D684E579C9CBC0DE4CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,23 @@
 			path = "maxym-softermii-test";
 			sourceTree = "<group>";
 		};
+		ACE27D684E579C9CBC0DE4CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46327D663655B81DC8DE14F2 /* Pods_maxym_softermii_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF978FEFC46182432705A091 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */,
+				982D3FCDAF7A542DF113126D /* Pods-maxym-softermii-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CAB7B5B201DC0420043DEF4 /* Build configuration list for PBXNativeTarget "maxym-softermii-test" */;
 			buildPhases = (
+				527C6AAEE8733DEA9C37CBBC /* [CP] Check Pods Manifest.lock */,
 				9CAB7B45201DC0420043DEF4 /* Sources */,
 				9CAB7B46201DC0420043DEF4 /* Frameworks */,
 				9CAB7B47201DC0420043DEF4 /* Resources */,
+				D66DFB9CB88E079AD569C154 /* [CP] Embed Pods Frameworks */,
+				57E085BE538F56EEAFE58C2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +155,102 @@
 			files = (
 				9CAB7B57201DC0420043DEF4 /* LaunchScreen.storyboard in Resources */,
 				9CAB7B54201DC0420043DEF4 /* Assets.xcassets in Resources */,
+				9CDE4856201DC11B00F4629C /* Podfile in Resources */,
 				9CAB7B52201DC0420043DEF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527C6AAEE8733DEA9C37CBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maxym-softermii-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57E085BE538F56EEAFE58C2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66DFB9CB88E079AD569C154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapperAdditions/ObjectMapperAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmAdditions/RealmAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapperAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CAB7B45201DC0420043DEF4 /* Sources */ = {
@@ -272,6 +393,7 @@
 		};
 		9CAB7B5C201DC0420043DEF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +408,7 @@
 		};
 		9CAB7B5D201DC0420043DEF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982D3FCDAF7A542DF113126D /* Pods-maxym-softermii-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
