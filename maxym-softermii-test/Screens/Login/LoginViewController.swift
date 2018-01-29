@@ -32,6 +32,12 @@ class LoginViewController: UIViewController {
     
     func handleAuth(authToken: String)  {
         KeychainService.token = authToken
+        showHome()
+    }
+    
+    func showHome() {
+        let homeVC = HomeViewController.loadFromNib
+        present(homeVC, animated: true, completion: nil)
     }
 
 }
