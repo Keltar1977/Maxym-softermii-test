@@ -23,6 +23,10 @@ class HomeViewController: UIViewController {
         setupCollectionView()
         setupRx()
     }
+    
+    override func viewDidLayoutSubviews() {
+        setupflowLayout()
+    }
 
     
     override func didReceiveMemoryWarning() {
@@ -36,18 +40,27 @@ class HomeViewController: UIViewController {
                                 withReuseIdentifier: "Header")
         collectionView.register(UINib(nibName: MediaCollectioCollectionViewCell.identifier, bundle: nil),
                                 forCellWithReuseIdentifier: "MediaCell")
-        
+    }
+    
+    private func setupflowLayout() {
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            let itemWidth = (collectionView.frame.size.width - 2 * flowLayout.minimumInteritemSpacing)/3
+            flowLayout.minimumInteritemSpacing = flowLayout.sectionInset.right
+            flowLayout.minimumLineSpacing = flowLayout.sectionInset.top
+            let itemWidth = (collectionView.frame.size.width - 4 * flowLayout.minimumInteritemSpacing)/3
             flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
         }
     }
     
     private func setupRx() {
-        viewModel = HomeViewModel(provider: provider)
-        
+        viewModel = HomeViewModel(provider: provider,
+                                  itemSelectedTap: collectionView.rx.itemSelected.asObservable())
         viewModel.items
             .bind(to: collectionView.rx.items(dataSource: viewModel.dataSource))
             .disposed(by: disposeBag)
+        
+        viewModel
+            .itemSelectedObservable.subscribe(onNext: { [unowned self] (mediaID) in
+                NavigationRouter.showDetailsScreen(from: self, with: mediaID)
+            }).disposed(by: disposeBag)
     }
 }

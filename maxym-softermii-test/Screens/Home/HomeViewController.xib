@@ -28,7 +28,7 @@
                         <size key="itemSize" width="85" height="85"/>
                         <size key="headerReferenceSize" width="400" height="150"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>

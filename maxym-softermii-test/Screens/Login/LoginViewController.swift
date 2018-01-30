@@ -32,14 +32,8 @@ class LoginViewController: UIViewController {
     
     func handleAuth(authToken: String)  {
         KeychainService.token = authToken
-        showHome()
+        NavigationRouter.showHomeScreen(from: self)
     }
-    
-    func showHome() {
-        let homeVC = HomeViewController.loadFromNib
-        present(homeVC, animated: true, completion: nil)
-    }
-
 }
 
 extension LoginViewController: WKNavigationDelegate {

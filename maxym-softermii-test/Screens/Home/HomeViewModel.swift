@@ -18,11 +18,13 @@ typealias RxDataSource = RxCollectionViewSectionedReloadDataSource
 class HomeViewModel {
     
     typealias DataSourceItem = SectionModel<String, Media>
-    var  items: Observable<[DataSourceItem]>
-    var dataSource: RxDataSource<DataSourceItem>!
+    var items: Observable<[DataSourceItem]>
+    var dataSource: RxDataSource<DataSourceItem>
+    var itemSelectedObservable: Observable<String>
 
-    init(provider: MoyaProvider<InstagramAPI>) {
+    init(provider: MoyaProvider<InstagramAPI>, itemSelectedTap: Observable<IndexPath>) {
         
+        let mediaArrayVariable = Variable([Media]())
         let userDriver = provider.rx.request(InstagramAPI.getUser())
             .mapObject(User.self)
             .asDriver(onErrorJustReturn: User())
@@ -33,6 +35,7 @@ class HomeViewModel {
                     return Observable.empty()
                 }
                 let mediaArray = data.flatMap { Media(JSON: $0) }
+                mediaArrayVariable.value = mediaArray
                 return Observable.just([SectionModel(model: "Media", items: mediaArray)])
             }
         
@@ -46,6 +49,11 @@ class HomeViewModel {
                 section.setup(with: user)
             }).disposed(by: section.disposeBag)
             return section
+        })
+        
+        itemSelectedObservable = itemSelectedTap.flatMapLatest({ (indexPath) -> Observable<String> in
+            let media = mediaArrayVariable.value[indexPath.row]
+            return Observable.just(media.ID)
         })
     }
 }
