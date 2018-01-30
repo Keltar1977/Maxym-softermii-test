@@ -14,7 +14,7 @@ import ObjectMapper
 enum InstagramAPI {
     case getUser()
     case getRecentMedia()
-    case getMedia(with mediaId: String)
+    case getMedia(mediaId: String)
 }
 
 extension InstagramAPI: TargetType {

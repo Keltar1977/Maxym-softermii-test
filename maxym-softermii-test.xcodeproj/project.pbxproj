@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		188B8EF8BB54D88B0A54D887 /* Pods_maxym_softermii_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46327D663655B81DC8DE14F2 /* Pods_maxym_softermii_test.framework */; };
+		9C7DE7E1201FB4890007E409 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7E0201FB4890007E409 /* UILabel+Extensions.swift */; };
+		9C7DE7E3201FB8710007E409 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7E2201FB8710007E409 /* Media.swift */; };
+		9C7DE7E7201FC6B50007E409 /* MediaCollectioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7E5201FC6B50007E409 /* MediaCollectioCollectionViewCell.swift */; };
+		9C7DE7E8201FC6B50007E409 /* MediaCollectioCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7DE7E6201FC6B50007E409 /* MediaCollectioCollectionViewCell.xib */; };
+		9C7DE7F420203A800007E409 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7F220203A800007E409 /* DetailsViewController.swift */; };
+		9C7DE7F520203A800007E409 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7DE7F320203A800007E409 /* DetailsViewController.xib */; };
+		9C7DE7F720203AA80007E409 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7F620203AA80007E409 /* DetailsViewModel.swift */; };
+		9C7DE7F920204BC20007E409 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DE7F820204BC20007E409 /* NavigationRouter.swift */; };
 		9CAB7B4D201DC0420043DEF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */; };
-		9CAB7B4F201DC0420043DEF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB7B4E201DC0420043DEF4 /* ViewController.swift */; };
 		9CAB7B52201DC0420043DEF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B50201DC0420043DEF4 /* Main.storyboard */; };
 		9CAB7B54201DC0420043DEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B53201DC0420043DEF4 /* Assets.xcassets */; };
 		9CAB7B57201DC0420043DEF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAB7B55201DC0420043DEF4 /* LaunchScreen.storyboard */; };
@@ -20,16 +27,29 @@
 		9CDE4862201DF20800F4629C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4861201DF20800F4629C /* Constants.swift */; };
 		9CDE4869201DFE0900F4629C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4867201DFE0900F4629C /* LoginViewController.swift */; };
 		9CDE486A201DFE0900F4629C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE4868201DFE0900F4629C /* LoginViewController.xib */; };
-		9CDE486D201DFE8800F4629C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */; };
+		9CDE486D201DFE8800F4629C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486C201DFE8800F4629C /* UIViewController+Extensions.swift */; };
 		9CDE486F201E009400F4629C /* LoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE486E201E009400F4629C /* LoginWebView.swift */; };
+		9CDE487B201E1C6F00F4629C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE487A201E1C6E00F4629C /* User.swift */; };
+		9CDE487E201E21BD00F4629C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE487C201E21BD00F4629C /* HomeViewController.swift */; };
+		9CDE487F201E21BD00F4629C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE487D201E21BD00F4629C /* HomeViewController.xib */; };
+		9CDE4881201E21D300F4629C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4880201E21D300F4629C /* HomeViewModel.swift */; };
+		9CDE4884201E241B00F4629C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE4883201E241B00F4629C /* HeaderView.swift */; };
+		9CDE4886201E247200F4629C /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDE4885201E247200F4629C /* HeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46327D663655B81DC8DE14F2 /* Pods_maxym_softermii_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maxym_softermii_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982D3FCDAF7A542DF113126D /* Pods-maxym-softermii-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.release.xcconfig"; sourceTree = "<group>"; };
+		9C7DE7E0201FB4890007E409 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		9C7DE7E2201FB8710007E409 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		9C7DE7E5201FC6B50007E409 /* MediaCollectioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCollectioCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C7DE7E6201FC6B50007E409 /* MediaCollectioCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCollectioCollectionViewCell.xib; sourceTree = "<group>"; };
+		9C7DE7F220203A800007E409 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9C7DE7F320203A800007E409 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		9C7DE7F620203AA80007E409 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9C7DE7F820204BC20007E409 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		9CAB7B49201DC0420043DEF4 /* maxym-softermii-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "maxym-softermii-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CAB7B4E201DC0420043DEF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CAB7B51201DC0420043DEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CAB7B53201DC0420043DEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CAB7B56201DC0420043DEF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,8 +61,14 @@
 		9CDE4861201DF20800F4629C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CDE4867201DFE0900F4629C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9CDE4868201DFE0900F4629C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9CDE486C201DFE8800F4629C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		9CDE486E201E009400F4629C /* LoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebView.swift; sourceTree = "<group>"; };
+		9CDE487A201E1C6E00F4629C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9CDE487C201E21BD00F4629C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9CDE487D201E21BD00F4629C /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9CDE4880201E21D300F4629C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9CDE4883201E241B00F4629C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		9CDE4885201E247200F4629C /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		A63A984C7744837F3578A881 /* Pods-maxym-softermii-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maxym-softermii-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maxym-softermii-test/Pods-maxym-softermii-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C7DE7F120203A1F0007E409 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				9C7DE7F220203A800007E409 /* DetailsViewController.swift */,
+				9C7DE7F320203A800007E409 /* DetailsViewController.xib */,
+				9C7DE7F620203AA80007E409 /* DetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		9CAB7B40201DC0420043DEF4 = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +116,13 @@
 		9CAB7B4B201DC0420043DEF4 /* maxym-softermii-test */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE4882201E23FF00F4629C /* CustomViews */,
+				9CDE4879201E1C6E00F4629C /* Model */,
 				9CDE486B201DFE6800F4629C /* Extensions */,
 				9CDE4863201DFD5A00F4629C /* Screens */,
 				9CDE4860201DF1F400F4629C /* Helpers */,
 				9CDE4859201DEC3000F4629C /* API */,
 				9CAB7B4C201DC0420043DEF4 /* AppDelegate.swift */,
-				9CAB7B4E201DC0420043DEF4 /* ViewController.swift */,
 				9CAB7B50201DC0420043DEF4 /* Main.storyboard */,
 				9CAB7B53201DC0420043DEF4 /* Assets.xcassets */,
 				9CAB7B55201DC0420043DEF4 /* LaunchScreen.storyboard */,
@@ -108,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9CDE4861201DF20800F4629C /* Constants.swift */,
+				9C7DE7F820204BC20007E409 /* NavigationRouter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -115,6 +153,7 @@
 		9CDE4863201DFD5A00F4629C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9C7DE7F120203A1F0007E409 /* Details */,
 				9CDE4871201E10C500F4629C /* Home */,
 				9CDE4864201DFD7600F4629C /* Login */,
 			);
@@ -134,7 +173,8 @@
 		9CDE486B201DFE6800F4629C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9CDE486C201DFE8800F4629C /* UIViewController+Extension.swift */,
+				9CDE486C201DFE8800F4629C /* UIViewController+Extensions.swift */,
+				9C7DE7E0201FB4890007E409 /* UILabel+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -142,8 +182,31 @@
 		9CDE4871201E10C500F4629C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				9CDE487C201E21BD00F4629C /* HomeViewController.swift */,
+				9CDE487D201E21BD00F4629C /* HomeViewController.xib */,
+				9CDE4880201E21D300F4629C /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		9CDE4879201E1C6E00F4629C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE487A201E1C6E00F4629C /* User.swift */,
+				9C7DE7E2201FB8710007E409 /* Media.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CDE4882201E23FF00F4629C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9CDE4883201E241B00F4629C /* HeaderView.swift */,
+				9CDE4885201E247200F4629C /* HeaderView.xib */,
+				9C7DE7E5201FC6B50007E409 /* MediaCollectioCollectionViewCell.swift */,
+				9C7DE7E6201FC6B50007E409 /* MediaCollectioCollectionViewCell.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		ACE27D684E579C9CBC0DE4CC /* Frameworks */ = {
@@ -227,9 +290,13 @@
 			files = (
 				9CDE486A201DFE0900F4629C /* LoginViewController.xib in Resources */,
 				9CAB7B57201DC0420043DEF4 /* LaunchScreen.storyboard in Resources */,
+				9C7DE7E8201FC6B50007E409 /* MediaCollectioCollectionViewCell.xib in Resources */,
 				9CAB7B54201DC0420043DEF4 /* Assets.xcassets in Resources */,
 				9CDE4856201DC11B00F4629C /* Podfile in Resources */,
 				9CAB7B52201DC0420043DEF4 /* Main.storyboard in Resources */,
+				9CDE487F201E21BD00F4629C /* HomeViewController.xib in Resources */,
+				9CDE4886201E247200F4629C /* HeaderView.xib in Resources */,
+				9C7DE7F520203A800007E409 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,15 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CDE486D201DFE8800F4629C /* UIViewController+Extension.swift in Sources */,
+				9CDE486D201DFE8800F4629C /* UIViewController+Extensions.swift in Sources */,
 				9CDE486F201E009400F4629C /* LoginWebView.swift in Sources */,
 				9CDE4869201DFE0900F4629C /* LoginViewController.swift in Sources */,
-				9CAB7B4F201DC0420043DEF4 /* ViewController.swift in Sources */,
 				9CDE485D201DED9C00F4629C /* KeychainService.swift in Sources */,
+				9C7DE7F920204BC20007E409 /* NavigationRouter.swift in Sources */,
 				9CAB7B4D201DC0420043DEF4 /* AppDelegate.swift in Sources */,
+				9C7DE7E7201FC6B50007E409 /* MediaCollectioCollectionViewCell.swift in Sources */,
+				9C7DE7E1201FB4890007E409 /* UILabel+Extensions.swift in Sources */,
 				9CDE485B201DEC4A00F4629C /* APIProvider.swift in Sources */,
+				9C7DE7F420203A800007E409 /* DetailsViewController.swift in Sources */,
+				9CDE4881201E21D300F4629C /* HomeViewModel.swift in Sources */,
+				9CDE487E201E21BD00F4629C /* HomeViewController.swift in Sources */,
 				9CDE485F201DF17100F4629C /* InstagramAPI.swift in Sources */,
+				9CDE487B201E1C6F00F4629C /* User.swift in Sources */,
 				9CDE4862201DF20800F4629C /* Constants.swift in Sources */,
+				9CDE4884201E241B00F4629C /* HeaderView.swift in Sources */,
+				9C7DE7E3201FB8710007E409 /* Media.swift in Sources */,
+				9C7DE7F720203AA80007E409 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +553,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHN74N64DR;
 				INFOPLIST_FILE = "maxym-softermii-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.maxym-softermii-test";
@@ -492,6 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HHN74N64DR;
 				INFOPLIST_FILE = "maxym-softermii-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.maxym-softermii-test";
